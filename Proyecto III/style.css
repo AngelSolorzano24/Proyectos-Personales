@@ -1,0 +1,426 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+body{
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+/*Nav Estilo*/
+
+.div-nav{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  background-color: rgba(0, 129, 241, 0);
+  position: absolute;
+  }
+
+nav{
+  
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  
+  
+
+a{
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  font-family: 'ubuntu';
+
+  
+  
+}
+
+a:after{
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 74, 2);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  
+  
+
+}
+
+a:hover::after{
+  width: 100%;
+  
+ 
+}
+
+.portafolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  background-size: cover;
+    color: white;
+    position: relative;
+    
+    
+    
+}
+
+.portafolio video{
+width: 100%;
+height: 100%;
+}
+
+.portafolio-items{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.portafolio-items h1{
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  }
+
+.portafolio-items::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.59));
+  z-index: 1;
+  
+}
+
+.h2{
+position: relative;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+
+.portafolio h1{
+    padding-left: 45px;
+    font-size: 150px;
+    padding-right: 45px;
+    
+}
+.separador{
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.separador2{
+  height: 10px;
+}
+    
+
+.contenedor{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;  
+    bottom:50px ;
+    background-color: #000000;
+   
+}
+
+/* hover recomendaciones 2*/
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  }
+
+.box{
+  position: relative;
+  width: 320px;
+  height: 520px;
+  background: #000;
+  box-shadow: 0 30px 30px rgba(0,0,0,.5);
+  
+  }
+
+.box .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .imgBx img{
+position:  absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: 0.5s;
+}
+
+.box:hover .imgBx img{
+  opacity: 0;
+}
+
+.box .content{
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.box:hover .content{
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.box .content h3{
+  margin:  0 ;
+  padding: 0;
+  font-size: 20px;
+}
+
+.box .content p{
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  line-height: 22px;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.box:hover .content p{
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+/*Titulo Datos interesantes*/
+
+.h2-datos{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+/*CARRUSEL DATOS INTERESANTES*/
+
+ul{
+  display: flex;
+}
+
+li{
+  padding: 0 20px ;
+  text-transform: capitalize;
+  color: #000000;
+  font-size: 18px;
+}
+
+li a{
+  font-size: 18px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.swiper{
+  margin-top: 50px;
+  width: 94%;
+
+}
+.swiper-slide{
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: 420px;
+  width: 295px;
+  position: relative;
+  display: flex;
+ }
+
+.swiper-slide img{
+  width: 100%;
+  border-radius: 15px;
+  height: 450px;
+}
+
+.swiper-txt{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: #0000005e;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.swiper-txt h3{
+  margin-left: 10px;
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color:#ffffff;
+  text-align: center;
+  
+}
+.swiper-txt p{
+  margin: 15px;
+  vertical-align: middle;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px
+}
+
+
+
+/*Footer*/
+.separador3{
+  width: 100%;
+  height: 50px;
+}
+
+
+.contenedor-footer{
+  
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+
+}
+
+.section-fotter img {
+  padding-right: 15px;
+
+}
+
+.icono{
+  width: 50px;
+  height: 50px;
+
+}
+
+/* Animaciones */
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+
+@media( max-width: 650px){
+  .portafolio h1{
+    font-size: 25px;
+    padding: 0;
+  }
+
+
+  .div-nav a{
+    font-size: 15px;
+    }
+
+    .div-nav{
+      width: 500px;
+      
+    }
+
+    .container{
+      width: 100%;
+      justify-content: space-around;
+      display: flex;
+    
+    }
+
+    .portafolio{
+      width: 600px;
+      height: auto;
+    }
+
+    .portafolio video{
+      width: 600px;
+      height: auto;
+    }
+
+    .separador{
+      width: 600px;
+    }
+    
+    .box .content p{
+      margin: 10px 0 0;
+      padding: 0;
+      opacity: 0;
+      line-height: 15px;
+      transition: 0.5s;
+      text-align: start;
+      font-size: 10px;
+
+    }
+}
